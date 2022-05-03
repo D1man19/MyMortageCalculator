@@ -1,0 +1,109 @@
+.app-wrapper {
+
+}
+
+.form-box {
+    background: #f8a000;
+    height: 150px;
+    padding: 20px;
+    margin: 0 50px 50px 50px;
+
+}
+
+.form-box form {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-areas: "banks sum min-pay years btn-calc"
+
+
+}
+
+.form-box button {
+    grid-area: btn-calc;
+    width: 80px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+#btn-1:enabled{
+    cursor: pointer;
+}
+
+#box-result {
+    margin: 0 35% 50px 35%;
+    padding: 20px;
+    background-color: #41c028;
+    width: 300px;
+    height: 150px;
+}
+
+.hat {
+    background-color: #4e4e4f;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 20px;
+    display: grid;
+    grid-template-areas:
+    'bankName interestRate maxLoan minDownPay loanTerm';
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.bank {
+    background-color: #c5c5d6;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 20px;
+    display: grid;
+    grid-template-areas:
+    'bankName interestRate maxLoan minDownPay loanTerm';
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.list-banks {
+    margin: 0 50px;
+}
+
+.bankName {
+    grid-area: bankName;
+}
+
+.interestRate {
+    grid-area: interestRate;
+}
+
+.maxLoan {
+    grid-area: maxLoan;
+}
+
+.minDownPay {
+    grid-area: minDownPay;
+}
+
+.loanTerm {
+    grid-area: loanTerm;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+.form-box label {
+    font-weight: bold;
+}
+
+.banks {
+    grid-area: banks;
+}
+
+.sum {
+    grid-area: sum;
+}
+
+.min-pay {
+    grid-area: min-pay;
+}
+
+.years {
+    grid-area: years;
+}

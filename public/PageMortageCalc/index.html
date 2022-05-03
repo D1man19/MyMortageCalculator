@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Calculator page</title>
+</head>
+<body>
+<div class="app-wrapper">
+    <h3>Mortgage calculator</h3>
+    <div class="form-box">
+        <form id="form-calc">
+            <div class="banks">
+                <label for="banks">Bank name</label><br>
+                <select name="banks" id="banks" onchange="changeIndex()">
+                </select>
+            </div>
+            <div class="sum">
+                <label for="sum">Sum loan, UAH</label><br>
+                <input type="number" id="sum" required oninput="validateSum()">
+            </div>
+
+            <div class="min-pay">
+                <label for="min-pay">Minimum down payment, %</label><br>
+                <input type="number" id="min-pay" required max="99" oninput="validateMinPay()">
+            </div>
+
+            <div class="years">
+                <label for="years">Loan term, years</label><br>
+                <input type="number" id="years" required oninput="validateYears()">
+            </div>
+
+            <button onclick="calculate()" id="btn-1">Calculate</button>
+        </form>
+    </div>
+
+    <div class="list-banks">
+
+    </div>
+</div>
+<script src="../initStorage.js"></script>
+<script>
+    initStorage()
+</script>
+<script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+.app-wrapper {
+    margin: 20px 30px 50px;
+}
+
+.bank {
+    background-color: #c5c5d6;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 20px;
+    display: grid;
+    grid-template-areas:
+    'bankName interestRate maxLoan minDownPay loanTerm wrapperForButtons';
+    grid-template-columns: 20% 15% 20% 15% 20% 10%;
+}
+
+.hat {
+    background-color: #4e4e4f;
+    color: white;
+    margin-bottom: 10px;
+    /*padding: 10px 125px 10px 80px;*/
+    padding: 10px 10px 10px 20px;
+    /*font-weight: bold;*/
+    display: grid;
+    grid-template-areas:
+    'bankName interestRate maxLoan minDownPay loanTerm wrapperForButtons';
+    grid-template-columns: 20% 15% 20% 15% 20% 10%;
+}
+
+.bankName {
+    grid-area: bankName;
+}
+
+.interestRate {
+    grid-area: interestRate;
+}
+
+.maxLoan {
+    grid-area: maxLoan;
+}
+
+.minDownPay {
+    grid-area: minDownPay;
+}
+
+.loanTerm {
+    grid-area: loanTerm;
+}
+
+.wrapperForButtons {
+    grid-area: wrapperForButtons;
+}
+
+.wrapperForButtons button {
+    float: right;
+    cursor: pointer;
+}
+
+.wrapperForButtons button:hover {
+    opacity: 0.5;
+
+}
+
+.btn-edit, .btn-delete {
+    border: none;
+    background-color: #c5c5d6;
+}
+
+.create-btn {
+    float: right;
+    cursor: pointer;
+}
+
+.createBank {
+    background-color: #c5c5d6;
+    margin-bottom: 10px;
+    padding: 20px;
+}
